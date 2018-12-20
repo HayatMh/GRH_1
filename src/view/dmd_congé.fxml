@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="533.0" prefWidth="708.0" style="-fx-background-color: #c0c0c0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="47.0" layoutY="117.0" prefHeight="311.0" prefWidth="615.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="303.0" minWidth="10.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="466.0" minWidth="10.0" prefWidth="395.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="110.0" minHeight="3.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="110.0" minHeight="3.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="110.0" minHeight="3.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="114.0" minHeight="3.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="224.0" minHeight="3.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="3.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="262.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label contentDisplay="RIGHT" prefHeight="34.0" prefWidth="221.0" text="Nom" textFill="#757977">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="224.0" text="Prénom" textFill="#757977" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="57.0" prefHeight="34.0" prefWidth="220.0" text="Matricule" textFill="#757977" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="104.0" prefHeight="34.0" prefWidth="224.0" text="Département" textFill="#757977" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="151.0" prefHeight="35.0" prefWidth="219.0" text="Adresse" textFill="#757977" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="198.0" prefHeight="35.0" prefWidth="221.0" text="Salaire" textFill="#757977" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField editable="false" layoutX="159.0" layoutY="10.0" prefHeight="47.0" prefWidth="445.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField editable="false" layoutX="159.0" layoutY="57.0" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField editable="false" layoutX="159.0" layoutY="104.0" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField editable="false" layoutX="159.0" layoutY="151.0" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField editable="false" layoutX="159.0" layoutY="198.0" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="211.0" prefHeight="35.0" prefWidth="224.0" text="Nombre d'abscence" textFill="#757977" GridPane.rowIndex="6">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="159.0" layoutY="231.0" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="216.0" prefHeight="35.0" prefWidth="217.0" text="Nombre de jours demandés" textFill="#757977" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="230.0" layoutY="216.0" prefHeight="54.0" prefWidth="466.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin></TextField>
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="251.0" prefHeight="35.0" prefWidth="217.0" text="Nombre de jours restants" textFill="#757977" GridPane.rowIndex="9">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="230.0" layoutY="251.0" prefHeight="47.0" prefWidth="445.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label contentDisplay="RIGHT" layoutX="10.0" layoutY="258.0" prefHeight="35.0" prefWidth="217.0" text="La période de congé" textFill="#757977" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Cambria Math" size="18.0" />
+               </font>
+            </Label>
+            <TextField editable="false" layoutX="230.0" layoutY="258.0" prefHeight="47.0" prefWidth="445.0" style="-fx-background-color: #c0c0c0;" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" layoutX="155.0" layoutY="42.0" prefHeight="48.0" prefWidth="376.0" text="Les demandes de congés" textAlignment="CENTER" textFill="#258de1">
+         <font>
+            <Font name="Led Italic Font" size="21.0" />
+         </font>
+      </Label>
+      <Button layoutX="523.0" layoutY="473.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icone_GRH/Valider.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button layoutX="610.0" layoutY="473.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fitHeight="29.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../icone_GRH/Annuler.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="61.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icone_GRH/logo1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

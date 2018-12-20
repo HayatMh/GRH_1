@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="628.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ConnexionController">
+   <children>
+      <GridPane layoutY="1.0" prefHeight="443.0" prefWidth="628.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #e1e5ee;" GridPane.columnIndex="1">
+               <children>
+                  <JFXTextField fx:id="matricule" labelFloat="true" layoutX="89.0" layoutY="140.0" maxWidth="145.0" minWidth="145.0" prefHeight="35.0" prefWidth="145.0" promptText="Matricule">
+                     <cursor>
+                        <Cursor fx:constant="S_RESIZE" />
+                     </cursor>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXPasswordField fx:id="motdp" labelFloat="true" layoutX="89.0" layoutY="206.0" promptText="Mot de passe" />
+                  <JFXButton fx:id="buttonConnect" layoutX="93.0" layoutY="278.0" onAction="#Connect" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #2a324b;" text="Se connecter" textFill="#eee5e5">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="37.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icone_GRH/images.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="46.0" fitWidth="42.0" layoutX="37.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icone_GRH/Password.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="477.0" prefWidth="314.0" style="-fx-background-color: #2a324b;">
+               <children>
+                  <ImageView fitHeight="153.0" fitWidth="178.0" layoutX="72.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../icone_GRH/logo1.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="42.0" layoutY="180.0" prefHeight="39.0" prefWidth="86.0" text="Gestion" textFill="#eff4f5">
+                     <font>
+                        <Font name="Kristen ITC" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="128.0" layoutY="177.0" prefHeight="46.0" prefWidth="161.0" text="des ressources" textFill="#e4e1e1">
+                     <font>
+                        <Font name="Kristen ITC" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="223.0" prefHeight="46.0" prefWidth="120.0" text="humaines" textFill="#f3eef5">
+                     <font>
+                        <Font name="Kristen ITC" size="22.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

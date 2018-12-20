@@ -20,8 +20,8 @@ public class ConnexionDB {
 		try {
 			
 			String username="sys as sysdba";
-			String pswd="urwelcome";
-			String host="jdbc:oracle:thin:@HayatMh:1521:xe";
+			String pswd="1234";
+			String host="jdbc:oracle:thin:@DESKTOP-BB23HMI:1521:xe";
 			
 			Class.forName("oracle.jdbc.driver.OracleDriver");  
 

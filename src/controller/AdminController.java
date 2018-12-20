@@ -2,6 +2,9 @@ package controller;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import administrationModel.Administrateur;
+import administrationModel.Employee;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -138,6 +141,18 @@ public class AdminController {
     }
     
     void initData(String x) {
-    	acceuil_matricule.setText(x);
+    	Employee emp=new Employee();
+    	Administrateur adm=new Administrateur();
+    	emp=adm.retournerEmp(Integer.parseInt(x));
+    	acceuil_matricule.setText(Integer.toString(emp.getMatricule()));
+    	acceuil_nom.setText(emp.getNom());
+    	acceuil_prenom.setText(emp.getPrenom());
+    	acceuil_adresse.setText(emp.getAdresse());
+    	acceuil_occupation.setText(emp.getOccupation());
+    	acceuil_dapartement.setText(emp.getDepartement());
+    	acceuil_mail.setText(emp.getEmail());
+    	acceuil_datenaissance.setText(emp.getDateNaiss());
+    	acceuil_salaire.setText(Double.toString(emp.getSalaire()));
+    	acceuil_rstconge.setText(Integer.toString(emp.getResteConge()));
     }
 }

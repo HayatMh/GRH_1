@@ -4,7 +4,7 @@ import java.util.*;
 import java.sql.*;
 import java.util.regex.Pattern;
 
-public class Administrateur implements EmployeeDAO,FicheDePaieDAO,CongeDAO,LoginDAO{
+public class Administrateur implements EmployeeDAO,FicheDePaieDAO,CongeDAO,LoginDAO,MessageDAO{
 
 	private static Scanner input = new Scanner(System.in); 
 
@@ -522,7 +522,45 @@ public class Administrateur implements EmployeeDAO,FicheDePaieDAO,CongeDAO,Login
 		return rpt;
 	}
 	
+	
+	//--------------------------------------------------------------------------------------------------------------
+	
+	@Override
+	public int envoyerMsg(Message msg) {
+		int r=0;
+		try { ConnexionDB cx= new ConnexionDB();
+		
+		String str="insert into message values (seq_msg.nextval,'"+msg.getSrc()+"','"+msg.getDst()+"','"+msg.getMsg()+"','non-lu','"
+				+msg.getObjet()+"')";
+		cx.getSt().executeUpdate(str);
+		cx.getCon().commit();
+		r=1;
+		cx.getCon().close();	
+			
+		}
+		catch (SQLException e) {e.printStackTrace();}
+		return r;
+	}
+
+	@Override
+	public int lireMsg(Message msg) {
+		int r=0;
+		try { ConnexionDB cx= new ConnexionDB();
+		
+		String str="update message set status= lu where num_msg ="+msg.getNum_msg();
+		cx.getSt().executeUpdate(str);
+		cx.getCon().commit();
+		r=1;
+		cx.getCon().close();	
+			
+		}
+		catch (SQLException e) {e.printStackTrace();}
+		return r;
+		
+	}
+	
 }	
+
 	
 
 	
